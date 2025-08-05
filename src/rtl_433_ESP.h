@@ -40,7 +40,9 @@
 
 // RadioLib Library setup
 
-#define RADIOLIB_LOW_LEVEL
+#ifndef RADIOLIB_LOW_LEVEL
+#define RADIOLIB_LOW_LEVEL (0)
+#endif
 
 #include <RadioLib.h>
 
